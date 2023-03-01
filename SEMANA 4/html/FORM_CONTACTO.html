@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario y Estilos Css</title>
+    <link rel="stylesheet" href="../css/Contacto.css">
+</head>
+<body>
+    <header>
+        <img src="../img/incap.jpeg" alt="" width="100" height="100">
+        <h1>FORMULARIO Y LISTAS DE HTML</h1>
+    </header>   
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Productos</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+    <section>
+        <form action="datos.php" method="post">
+            <!-- Seccion de fieldset -->
+            <fieldset>
+                <!-- seccion ingreso de nombre -->
+                <label for="">Nombre completo</label>
+                <input type="text" name="nombre" placeholder="&#9756; ingrese su nombre" required="">
+                <br><br>
+                <!-- seccion de email -->
+                <label for="">Email</label>
+                <input type="email" name="email" placeholder="&#9874; ingrese su email" required="">
+                <br><br>
+                <!-- seccion contraseña -->
+                <label for="">Contraseña</label>
+                <input type="password" name="contraseña" placeholder="&#9745; ingrese su contraseña" required="">
+                <br><br>
+                <!-- seccion de hobbies -->
+                <label for="">Seleciona tus hobbies</label>
+                <br>
+                <input type="checkbox" name="Cine">
+                <input type="checkbox" name="Lectura">
+                <input type="checkbox" name="Deporte">
+                <br><br>
+                <!-- seccion Estado Civil -->
+                <label for="">Estado Civil</label> <br>
+                <input type="radio" name="estado civil" value="casado"> Casado(a)<br>
+                <input type="radio" name="estado civil" value="casado"> Soltero(a)<br>
+                <input type="radio" name="estado civil" value="casado">Viudo(a)<br>
+                <br><br>
+                <!-- Seccion de opcion lista -->
+                <label for="">PROGRAMAS TECNICOS</label>
+                <select name="select" id="">
+                    <option value="">Seleccione programa</option>
+                    <option value="">Sistemas</option>
+                    <option value="">Diseño Grafico</option>
+                    <option value="">Contabilidad</option>
+                </select>
+                <br><br>
+                <!-- seccion comentarios -->
+                <label for="">Tu comentario</label>
+                <br>
+                <textarea name="mebsahe" id="" cols="40" rows="5"></textarea>
+            </fieldset>
+            <br><br>
+            <hr>
+            <!-- seccion de botones form -->
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+            <br><br>
+        </form>
+    </section>
+    <!-- seccion de footer -->
+    <footer>
+        <p>Derechos reservados  &copy;2023 &#64;Dilan</p>
+    </footer>
+</body>
+</html>
